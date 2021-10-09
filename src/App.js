@@ -10,37 +10,22 @@ import Shop from './components/Shop/Shop';
 function App() {
   return (
     <div>
-<<<<<<< HEAD
-=======
-
->>>>>>> a6c8176989799e4d2cc89f0a7280911c03d2b41c
       <Router>
         <Header></Header>
         <Switch>
           <Route exact path="/">
             <Shop></Shop>
           </Route>
-<<<<<<< HEAD
           <Route path="/shop">
-=======
-          <Route exact path="/shop">
->>>>>>> a6c8176989799e4d2cc89f0a7280911c03d2b41c
             <Shop></Shop>
           </Route>
           <Route path="/review">
             <OrderReview></OrderReview>
           </Route>
-<<<<<<< HEAD
           <Route path="/inventory">
             <Inventory></Inventory>
           </Route>
           <Route path="/placeorder">
-=======
-          <Route path="/Inventory">
-            <Inventory></Inventory>
-          </Route>
-          <Route path="/PlaceOrder">
->>>>>>> a6c8176989799e4d2cc89f0a7280911c03d2b41c
             <PlaceOrder></PlaceOrder>
           </Route>
           <Route path="*">
@@ -49,11 +34,7 @@ function App() {
         </Switch>
       </Router>
 
-<<<<<<< HEAD
     </div>
-=======
-    </div >
->>>>>>> a6c8176989799e4d2cc89f0a7280911c03d2b41c
   );
 }
 
