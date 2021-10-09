@@ -3,7 +3,10 @@ import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import { addToDb } from '../../utilities/fakedb';
 import './Shop.css';
+<<<<<<< HEAD
 import useCart from '../../hooks/useCart';
+=======
+>>>>>>> a6c8176989799e4d2cc89f0a7280911c03d2b41c
 import { Link } from 'react-router-dom';
 
 const Shop = () => {
@@ -24,6 +27,7 @@ const Shop = () => {
 
 
     const handleAddToCart = (product) => {
+<<<<<<< HEAD
         const exists = cart.find(pd => pd.key === product.key);
         let newCart = [];
         if (exists) {
@@ -34,8 +38,21 @@ const Shop = () => {
         else {
             product.quantity = 1;
             newCart = [...cart, product];
+=======
+        const exsists = cart.find(pd => pd.key === product.key);
+        let newCart = [];
+        if (exsists) {
+            const rest = cart.filter(pd => pd.key !== product.key);
+            exsists.quantity = exsists.quantity + 1;
+            newCart = [...rest, product]
+        }
+        else {
+            product.quantity = 1;
+            newCart = [...cart, product]
+>>>>>>> a6c8176989799e4d2cc89f0a7280911c03d2b41c
         }
         setCart(newCart);
+        console.log(newCart)
         // save to local storage (for now)
         addToDb(product.key);
 
@@ -71,7 +88,11 @@ const Shop = () => {
                 <div className="cart-container">
                     <Cart cart={cart}>
                         <Link to="/review">
+<<<<<<< HEAD
                             <button className="btn-regular">Review Your Order</button>
+=======
+                            <button className="btn-regular">Review Order</button>
+>>>>>>> a6c8176989799e4d2cc89f0a7280911c03d2b41c
                         </Link>
                     </Cart>
                 </div>

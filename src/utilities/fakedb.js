@@ -33,6 +33,7 @@ const removeFromDb = id => {
     const shopping_cart = JSON.parse(exists);
     delete shopping_cart[id];
     updateDb(shopping_cart);
+
   }
 }
 
