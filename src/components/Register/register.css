@@ -1,0 +1,15 @@
+.register-from{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.register{
+    background-color: rgb(181, 200, 201);
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+    
+}
+
