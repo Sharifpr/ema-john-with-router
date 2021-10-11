@@ -30,11 +30,11 @@ const Login = () => {
                     <input type="submit" value="Submit" />
                 </form>
                 <p>New to ema-john? <Link to="/register">Create Account </Link></p>
-                <div>Or</div>
+                <div>----------Or----------</div>
                 <br />
                 <button className="btn-regular"
                     onClick={handleGoogleLogin}
-                >Google</button>
+                >Sign in with google</button>
             </div>
         </div>
     );
